@@ -1,4 +1,4 @@
-# 👋 Hey there! I'm [Matheus Camilo Ferraro] (MatheusFerraro)
+# 👋 Hey there! I'm Matheus Camilo Ferraro (MatheusFerraro)
 
 🎓 Software Development student at NBCC (New Brunswick Community College)  
 💻 Backend-focused developer passionate about clean, maintainable systems  
