@@ -53,6 +53,7 @@ Simple console-based text editor written in C#
 - Docker & CI/CD with GitHub Actions  
 - Clean Architecture & Domain-Driven Design (DDD)  
 - REST APIs with ASP.NET Core
+- Python
 
 ---
 
