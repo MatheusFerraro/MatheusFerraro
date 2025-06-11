@@ -3,7 +3,7 @@
 🎓 Software Development student at NBCC (New Brunswick Community College)  
 💻 Backend-focused developer passionate about clean, maintainable systems  
 📌 Currently focused on C#, .NET, SQL Server, ADO.NET, Clean Architecture, and RESTful APIs  
-🌎 Open to internship opportunities in backend or full stack development
+🌎 Open to internship opportunities in backend or full-stack development
 
 ---
 
