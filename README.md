@@ -30,10 +30,10 @@ A collection of hands-on prototypes using Arduino UNO and ESP32.
 
 | Domain | Technologies |
 | :--- | :--- |
-| **Backend** | C#, .NET Core, ASP.NET MVC, Java, PHP |
+| **Backend** | C#, .NET Core, ASP.NET MVC/Core, Java, Python |
 | **Embedded** | C/C++, Arduino, ESP32, IoT Protocols (MQTT/HTTP) |
 | **Frontend** | JavaScript, React (Learning), HTML5, CSS3 |
-| **Tools** | Git, Visual Studio, VS Code, SQL Server |
+| **Tools** | Git, Visual Studio, VS Code, SQL Server, MongoDB |
 
 ### 🌐 Languages
 - **Portuguese:** Native
