@@ -18,7 +18,7 @@ A robust web platform for sharing recipes.
 - **Tech:** ASP.NET Core MVC, Entity Framework, SQL Server.
 - **Key Skills:** Clean Architecture, CRUD operations, and user authentication.
 
-#### 2. [Embedded Projects](https://github.com/MatheusFerraro/EmbeddedProjects) 🔌
+#### 2. [Embedded Projects](https://github.com/MatheusFerraro/Embedded-Projects) 🔌
 > *Hardware & Firmware Integration*
 A collection of hands-on prototypes using Arduino UNO and ESP32.
 - **Tech:** C++, GPIO control, PWM, Wi-Fi networking.
