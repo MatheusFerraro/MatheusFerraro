@@ -1,143 +1,96 @@
-<div align="center">
+# Hi, I'm Matheus 
 
-# Hey, I'm Matheus Ferraro 👋
+I'm a software developer based in Moncton, New Brunswick, originally from Brazil. I finished my Software Development diploma at NBCC in June 2026, and my focus is backend work with **C# and ASP.NET Core**.
 
-**Software Developer** · C#/.NET · Embedded Systems · IoT
+Most of what I build lives on the server side: REST APIs, data models, authentication, and the architecture that holds it all together. For my final term I did a practicum at **Gravitit**, where I worked on a real product that's now running in production.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mcamiloferraro/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white)](https://matheusferraro.github.io/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:matheus.ferraro@gmail.com)
+I'm currently looking for my first backend / full-stack developer role in Canada.
 
-</div>
+[LinkedIn](https://www.linkedin.com/in/mcamiloferraro/) · [Portfolio](https://matheusferraro.github.io/) · [Email](mailto:matheus.ferraro@gmail.com)
 
 ---
 
-### About Me
+## What I've been building
 
-I'm a **Software Development** student at **NBCC Moncton** (graduating 2026), originally from Brazil 🇧🇷, based in Canada 🇨🇦.  
-I build full-stack applications **and** embedded firmware — from ASP.NET Core REST APIs and SQL Server databases to ESP32 microcontroller prototypes with real sensors and displays.  
+### Flight Plan (TA-FLIGHTPLAN) — live in production
+My practicum project at Gravitit. It's a web app that lets pilots fill out an official ICAO flight plan online and download it as a print-ready PDF, replacing the hand-filled paper form. There's airport autocomplete, cross-field validation that catches mistakes before the PDF is generated, and an admin area for managing users, airports, and templates.
 
-Currently applying my technical and problem-solving skills as an **Electronic Associate at Walmart**, where I work hands-on with technology daily.
-
-> **🎯 Open to Internship / Junior Developer roles for 2026** — especially in C#/.NET, IoT, or full-stack development.
-
----
-
-### 🏗️ Pinned Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### [🏪 SmartRetail-System](https://github.com/MatheusFerraro/SmartRetail-System)
-
-**Real-Time IoT Retail Inventory Tracker**
-
-An end-to-end system that automates shelf stock monitoring — from a physical ultrasonic sensor to a live web dashboard.
-
-| Layer | Stack |
+| | |
 | :--- | :--- |
-| **Backend** | ASP.NET Core Web API · C# · Entity Framework · SQL Server |
-| **Edge Device** | ESP32 · HC-SR04 Ultrasonic Sensor · SSD1306 OLED · Buzzer |
-| **Frontend** | HTML · CSS · JavaScript · Chart.js (auto-polling) |
+| **Stack** | .NET 8 · ASP.NET Core MVC · EF Core · SQL Server · ASP.NET Core Identity · FreeSpire.XLS (Excel → PDF) · Serilog + Application Insights |
+| **Architecture** | N-Tier / Layered — one solution, five projects, dependencies pointing inward |
+| **Live** | [miplandevuelo.com](https://miplandevuelo.com/) |
 
-**Highlights:**
-- Async/DI architecture following enterprise C# patterns
-- Firmware maps raw distance → stock (%) with constrained bounds
-- Secure credentials — Wi-Fi secrets in git-ignored `secrets.h`
-- Full-stack integration bridging low-level C++ ↔ high-level C#
+This is the project I learned the most from — real users, a real deploy, real logging and monitoring.
 
-[![Demo](https://img.shields.io/badge/▶_Watch_Demo-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=raHG7weVkfM)
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MatheusFerraro/SmartRetail-System)
+### TCG Project — current work
+What I'm building right now: a backend for a trading card game, structured with **Vertical Slice Architecture**. Each feature owns its full path (request → handler → data) instead of being spread across horizontal layers. It's a deliberate contrast to the layered and clean-architecture projects below — same kind of problem, different way of organizing the code.
 
-</td>
-<td width="50%" valign="top">
-
-#### [🍳 RecipeWorld](https://github.com/MatheusFerraro/RecipeWorld)
-
-**Full-Stack Recipe Management Platform**
-
-An enterprise-grade web application showcasing N-Tier Architecture, secure authentication, database management, and unit testing — built with ASP.NET Core MVC (.NET 8).
-
-| Layer | Stack |
+| | |
 | :--- | :--- |
-| **Backend** | .NET 8 · ASP.NET Core MVC · Entity Framework Core · SQL Server |
-| **Auth** | ASP.NET Core Identity · Role-Based Access Control (RBAC) · JWT |
-| **Frontend** | Razor Views · Bootstrap 5 · jQuery Validation |
-| **Testing** | xUnit · Moq · EF Core In-Memory DB |
+| **Stack** | C# · ASP.NET Core Web API · EF Core · SQL Server |
+| **Architecture** | Vertical Slice |
+| **Status** | In progress |
 
-**Highlights:**
-- Service Layer pattern decoupling controllers from business logic & data access
-- Admin approval workflows for ingredients/categories (Pending → Approved)
-- Many-to-Many relationships, code-first migrations, and robust DB seeding
-- Hybrid interface: MVC frontend + Swagger-documented REST API
+### RecipeWorld
+A full-stack recipe app built with ASP.NET Core MVC. A service layer keeps the controllers thin, there's full authentication with role-based access (admins approve new ingredients and categories before they go live), code-first migrations, and unit tests.
 
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MatheusFerraro/RecipeWorld)
+| | |
+| :--- | :--- |
+| **Stack** | .NET 8 · ASP.NET Core MVC · EF Core · SQL Server · ASP.NET Core Identity (RBAC) · xUnit · Moq · Bootstrap |
+| **Architecture** | Layered / service pattern |
+| **Repo** | [RecipeWorld](https://github.com/MatheusFerraro/RecipeWorld) |
 
-</td>
-</tr>
-</table>
+### SmartRetail-System — capstone
+An end-to-end inventory tracker: an ESP32 with an ultrasonic sensor measures shelf stock, posts it to an ASP.NET Core Web API, and a live dashboard reads from it. The backend and the API contract are the parts I cared about most; the hardware was where I started before moving fully into backend.
+
+| | |
+| :--- | :--- |
+| **Stack** | ASP.NET Core Web API · C# · EF Core · SQL Server · Chart.js · ESP32 (C++) |
+| **Repo** | [SmartRetail-System](https://github.com/MatheusFerraro/SmartRetail-System) · [Demo video](https://www.youtube.com/watch?v=raHG7weVkfM) |
 
 ---
 
-### 🚀 More Projects
+## Built with others
 
-| Project | Description | Tech |
+Two projects I worked on with [Brian Cabello](https://github.com/briancabello):
+
+| Project | What it is | Stack |
 | :--- | :--- | :--- |
-| [🐍 Matheus_Snake](https://github.com/MatheusFerraro/Matheus_Snake) | OOP Snake Game on ESP32 — interfaces, state machine, I2C, hardware fallback | C++ · ESP32 · Arduino · SSD1306 OLED |
-| [🔌 Embedded Projects](https://github.com/MatheusFerraro/Embedded-Projects) | Collection of hands-on hardware prototypes (Arduino UNO & ESP32) | C++ · GPIO · PWM · Wi-Fi |
-| [🌐 Portfolio Website](https://github.com/MatheusFerraro/MatheusFerraro.github.io) | Personal portfolio site — live at [matheusferraro.github.io](https://matheusferraro.github.io/) | React · JavaScript · HTML · CSS |
+| [Flavor-da-Casa](https://github.com/briancabello/Flavor-da-Casa) | Restaurant management system | Java · Spring Boot · **Clean Architecture** |
+| [Trivia-Quest](https://github.com/briancabello/Trivia-Quest) | Real-time multiplayer trivia game | Node.js · Express · Socket.io |
 
 ---
 
-### 🛠️ Technical Skills
+## A note on architecture
 
-<div align="center">
+Something I've done on purpose is build across different architectural styles, so I understand the trade-offs firsthand instead of always reaching for the same template:
 
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- **Clean Architecture** — Flavor-da-Casa
+- **Layered / N-Tier** — Flight Plan
+- **Vertical Slice** — my current TCG project
 
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+Each one answers the same question — *where does the business logic go?* — in a different way, and each fits a different size of problem.
 
-</div>
+---
 
-| Domain | Technologies |
+## Tools I work with
+
+| Area | Tech |
 | :--- | :--- |
-| **Backend** | C#, .NET Core, ASP.NET MVC/Web API, Entity Framework, Java, Python |
-| **Embedded** | C/C++, Arduino, ESP32, IoT Protocols (MQTT / HTTP), I2C, GPIO, PWM |
-| **Frontend** | JavaScript, React, HTML5, CSS3, Chart.js |
-| **Databases** | SQL Server, MongoDB |
-| **Tools** | Git, Visual Studio, VS Code, Arduino IDE |
+| **Backend** | C#, .NET, ASP.NET Core (MVC + Web API), Entity Framework Core, Java / Spring Boot |
+| **Data** | SQL Server, some MongoDB |
+| **Testing** | xUnit, Moq |
+| **Frontend** | JavaScript, React, HTML, CSS, Chart.js |
+| **Other** | Git, Docker (basics), Azure (learning), Serilog |
+| **Earlier work** | C / C++ on ESP32 & Arduino — where I started, before focusing on backend |
 
 ---
 
-### 🌐 Languages
+## Languages
 
-| Language | Proficiency |
-| :--- | :--- |
-| 🇧🇷 Portuguese | Native |
-| 🇨🇦 English | Professional Working Proficiency |
-| 🇫🇷 French | Beginner / Learning |
+🇧🇷 Portuguese (native) · 🇨🇦 English (fluent) · 🇫🇷 French (learning)
 
 ---
 
-<div align="center">
-
-📫 **Let's connect!** I'm actively looking for my first developer role and would love to chat.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mcamiloferraro/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:matheus.ferraro@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white)](https://matheusferraro.github.io/)
-
-</div>
+📫 Open to backend and full-stack roles. The easiest way to reach me is [LinkedIn](https://www.linkedin.com/in/mcamiloferraro/) or [email](mailto:matheus.ferraro@gmail.com).
