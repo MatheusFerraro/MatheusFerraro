@@ -8,6 +8,18 @@ During my practicum at Gravitit, I worked on Flight Plan, a production web app f
 
 Right now, I'm building a trading card game backend using ASP.NET Core and Vertical Slice Architecture.
 
+## Projects
+
+Live:
+
+- [Flight Plan](https://miplandevuelo.com/) - ICAO flight plan web app built during my practicum at Gravitit
+- [RecipeWorld](https://recipeworld-p1x5.onrender.com/) - full-stack recipe app with authentication, admin approval flows, and role-based access
+
+Collaboration with Brian Cabello:
+
+- [Flavor-da-Casa](https://github.com/briancabello/Flavor-da-Casa) - restaurant management system
+- [Trivia-Quest](https://github.com/briancabello/Trivia-Quest) - real-time multiplayer trivia game
+
 ## Main Tech
 
 C# | .NET | ASP.NET Core | EF Core | SQL Server | JavaScript | React | Java / Spring Boot | xUnit | Git
