@@ -1,17 +1,18 @@
 # Hi, I'm Matheus
 
-I'm a software developer based in Moncton, New Brunswick, originally from Brazil. I recently finished my Software Development diploma at NBCC, and I'm focused on backend development with C#, ASP.NET Core, and SQL Server.
+I'm a software developer based in Moncton, New Brunswick, originally from Brazil. I finished my Software Development diploma at NBCC, and I'm focused on backend development with C#, ASP.NET Core, and PostgreSQL/SQL Server.
 
 I like building APIs, data models, authentication flows, and the backend structure that keeps an application maintainable.
 
 During my practicum at Gravitit, I worked on Flight Plan, a production web app for pilots to complete ICAO flight plans online and generate print-ready PDFs.
 
-Right now, I'm building a trading card game backend using ASP.NET Core and Vertical Slice Architecture.
+My latest project is NB TCG Trader, a deployed full-stack trading card marketplace and collection manager built with ASP.NET Core, React, and PostgreSQL.
 
 ## Projects
 
 Live:
 
+- [NB TCG Trader](https://nb-tcg-trader.vercel.app/) - trading card marketplace and collection manager: ASP.NET Core API on Azure Container Apps, React + TypeScript frontend, PostgreSQL, CI/CD with GitHub Actions ([repo](https://github.com/MatheusFerraro/NB_TCG_Trader))
 - [Flight Plan](https://miplandevuelo.com/) - ICAO flight plan web app built during my practicum at Gravitit
 - [RecipeWorld](https://recipeworld-p1x5.onrender.com/) - full-stack recipe app with authentication, admin approval flows, and role-based access
 
@@ -22,7 +23,7 @@ Collaboration with Brian Cabello:
 
 ## Main Tech
 
-C# | .NET | ASP.NET Core | EF Core | SQL Server | JavaScript | React | Java / Spring Boot | xUnit | Git
+C# | .NET | ASP.NET Core | EF Core | PostgreSQL | SQL Server | Vertical Slice Architecture | Docker | Azure | GitHub Actions (CI/CD) | xUnit | Testcontainers | TypeScript | React | Java / Spring Boot | Git
 
 ## Links
 
