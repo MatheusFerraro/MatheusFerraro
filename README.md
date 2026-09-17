@@ -1,6 +1,6 @@
 # Hi, I'm Matheus
 
-I'm a software developer based in Moncton, New Brunswick, originally from Brazil. I finished my Software Development diploma at NBCC, and I'm focused on backend development with C#, ASP.NET Core, and PostgreSQL/SQL Server.
+I'm a software developer based in Quebec City, Quebec, originally from Brazil. I finished my Software Development diploma at NBCC, and I'm focused on backend development with C#, ASP.NET Core, and PostgreSQL/SQL Server.
 
 I like building APIs, data models, authentication flows, and the backend structure that keeps an application maintainable.
 
